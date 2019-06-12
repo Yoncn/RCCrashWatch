@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RCCrashManager.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    // 获取崩溃信息
+    RegisterCrashHandler();
     return YES;
 }
 

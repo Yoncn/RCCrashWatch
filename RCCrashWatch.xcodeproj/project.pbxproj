@@ -13,6 +13,8 @@
 		E79BCBE022B0A63B00025B45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E79BCBDF22B0A63B00025B45 /* Assets.xcassets */; };
 		E79BCBE322B0A63B00025B45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E79BCBE122B0A63B00025B45 /* LaunchScreen.storyboard */; };
 		E79BCBE622B0A63B00025B45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E79BCBE522B0A63B00025B45 /* main.m */; };
+		E79BCBF122B0A78100025B45 /* RCCrashManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E79BCBED22B0A78100025B45 /* RCCrashManager.m */; };
+		E79BCBF222B0A78100025B45 /* RCCrashLog.m in Sources */ = {isa = PBXBuildFile; fileRef = E79BCBEE22B0A78100025B45 /* RCCrashLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		E79BCBE222B0A63B00025B45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E79BCBE422B0A63B00025B45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E79BCBE522B0A63B00025B45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E79BCBED22B0A78100025B45 /* RCCrashManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCrashManager.m; sourceTree = "<group>"; };
+		E79BCBEE22B0A78100025B45 /* RCCrashLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCrashLog.m; sourceTree = "<group>"; };
+		E79BCBEF22B0A78100025B45 /* RCCrashManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCrashManager.h; sourceTree = "<group>"; };
+		E79BCBF022B0A78100025B45 /* RCCrashLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCrashLog.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		E79BCBD522B0A63700025B45 /* RCCrashWatch */ = {
 			isa = PBXGroup;
 			children = (
+				E79BCBEC22B0A78100025B45 /* CrashManager */,
 				E79BCBD622B0A63700025B45 /* AppDelegate.h */,
 				E79BCBD722B0A63700025B45 /* AppDelegate.m */,
 				E79BCBD922B0A63700025B45 /* ViewController.h */,
@@ -69,6 +76,17 @@
 				E79BCBE522B0A63B00025B45 /* main.m */,
 			);
 			path = RCCrashWatch;
+			sourceTree = "<group>";
+		};
+		E79BCBEC22B0A78100025B45 /* CrashManager */ = {
+			isa = PBXGroup;
+			children = (
+				E79BCBF022B0A78100025B45 /* RCCrashLog.h */,
+				E79BCBEE22B0A78100025B45 /* RCCrashLog.m */,
+				E79BCBEF22B0A78100025B45 /* RCCrashManager.h */,
+				E79BCBED22B0A78100025B45 /* RCCrashManager.m */,
+			);
+			path = CrashManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +161,9 @@
 			files = (
 				E79BCBDB22B0A63700025B45 /* ViewController.m in Sources */,
 				E79BCBE622B0A63B00025B45 /* main.m in Sources */,
+				E79BCBF122B0A78100025B45 /* RCCrashManager.m in Sources */,
 				E79BCBD822B0A63700025B45 /* AppDelegate.m in Sources */,
+				E79BCBF222B0A78100025B45 /* RCCrashLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T74R6QYK74;
 				INFOPLIST_FILE = RCCrashWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T74R6QYK74;
 				INFOPLIST_FILE = RCCrashWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
